@@ -1,4 +1,6 @@
 a
+text
+h1
 abbr
 acronym
 address

