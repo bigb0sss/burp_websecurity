@@ -60,3 +60,10 @@
 
 ## Stored XSS into anchor href attribute with double quotes HTML-encoded
 
+* Payload (solution)
+```html
+xss_stored_href_attribute.py
+```
+
+
+
