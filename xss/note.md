@@ -58,3 +58,5 @@
 " autofocus onfocus=alert(1) x="
 ```
 
+## Stored XSS into anchor href attribute with double quotes HTML-encoded
+

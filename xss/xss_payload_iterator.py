@@ -13,7 +13,7 @@ def connect(url, injection):
         }
 
     proxies = {
-        'http' : '127.0.0.1:8080',
+        'http' : 'http://127.0.0.1:8080',
         }
 
     for i in open("payload.txt", "r"):
@@ -35,7 +35,7 @@ def allowedTag(url, injection):
         }
 
     proxies = {
-        'http' : '127.0.0.1:8080',
+        'http' : 'http://127.0.0.1:8080',
         }
 
     for i in open("tag.txt", "r"):
@@ -56,7 +56,7 @@ def allowedEvent(url, injection, tag):
         }
 
     proxies = {
-        'http' : '127.0.0.1:8080',
+        'http' : 'http://127.0.0.1:8080',
         }
 
     #for i in open("event.txt", "r"):
@@ -81,7 +81,7 @@ def customIterate(url, injection):
         }
 
     proxies = {
-        'http' : '127.0.0.1:8080',
+        'http' : 'http://127.0.0.1:8080',
         }
 
     for i in open("tag.txt", "r"):
