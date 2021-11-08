@@ -98,3 +98,15 @@ https://acaa1f4e1f5e9aa7c0c6e265002f004c.web-security-academy.net/post?postId=4&
 https://acae1faa1ef8845fc0303f5900250072.web-security-academy.net/feedback?returnPath=javascript:alert(document.domain)
 ```
 
+### DOM XSS in AngularJS expression with angle brackets and double quotes HTML-encoded
+AngularJS is a popular JavaScript library, which scans the contents of HTML nodes containing the ng-app attribute (also known as an AngularJS directive). When a directive is added to the HTML code, you can execute JavaScript expressions within double curly braces. This technique is useful when angle brackets are being encoded. 
+
+`<body ng-app>` --> This indicates that it uses AngularJS ng-app directive. Using double-curly braces, you can introduce an arbitrary JavaScript.
+
+* Payload
+```
+{{$on.constructor('alert(1)')()}}
+```
+
+### Reflected DOM XSS
+Reflected DOM vulnerabilities occur when the server-side application processes data from a request and echoes the data in the response. A script on the page then processes the reflected data in an unsafe way, ultimately writing it to a dangerous sink.
