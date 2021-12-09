@@ -1,2 +1,2 @@
 # burp_websecurity
- code to use to solve burp web security training
+Scripts/code used to solve burp web security training
