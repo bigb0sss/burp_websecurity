@@ -1,6 +1,43 @@
 # Web Security Academy
 ## Material Checklist
 
+- [ ] Client-side prototype pollution
+    - [ ] JavaScript prototypes and inheritance
+    - [ ] What is prototype pollution?
+    - [ ] Finding client-side prototype pollution vulnerabilities
+    - [ ] Prototype pollution via browser APIs
+    - [ ] Preventing prototype pollution
+    - [ ] JavaScript prototypes and inheritance
+        - [ ] What is an object in JavaScript?
+        - [ ] What is a prototype in JavaScript?
+        - [ ] How does object inheritance work in JavaScript?
+        - [ ] The prototype chain
+        - [ ] Accessing an object's prototype using __proto__
+        - [ ] Modifying prototypes
+    - [ ] What is prototype pollution?
+        - [ ] How do prototype pollution vulnerabilities arise?
+        - [ ] Prototype pollution sources
+            - [ ] Prototype pollution via the URL
+            - [ ] Prototype pollution via JSON input
+        - [ ] Prototype pollution sinks
+        - [ ] Prototype pollution gadgets
+            - [ ] Example of a prototype pollution gadget
+    - [ ] Finding prototype pollution vulnerabilities
+        - [ ] Finding prototype pollution sources manually
+        - [ ] Finding prototype pollution sources using DOM Invader
+        - [ ] Finding prototype pollution gadgets manually
+        - [ ] Finding prototype pollution gadgets using DOM Invader
+        - [ ] Prototype pollution via the constructor
+        - [ ] Prototype pollution in external libraries
+    - [ ] Prototype pollution via browser APIs
+        - [ ] Prototype pollution via fetch()
+        - [ ] Prototype pollution via Object.defineProperty()
+    - [ ] How to prevent prototype pollution vulnerabilities
+        - [ ] Sanitize property keys
+        - [ ] Prevent changes to global prototypes
+        - [ ] Prevent an object from inheriting properties
+        - [ ] Use safer alternatives where possible
+
 - [ ] JWT attacks
     - [ ] What are JWTs?
     	- [ ] JWT format
