@@ -1,7 +1,7 @@
 # Web Security Academy
 ## Material Checklist
 
-- [ ] Client-side prototype pollution
+- [X] Client-side prototype pollution
     - [ ] JavaScript prototypes and inheritance
     - [ ] What is prototype pollution?
     - [ ] Finding client-side prototype pollution vulnerabilities
