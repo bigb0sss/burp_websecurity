@@ -19,7 +19,7 @@
             - [X] Prototype pollution via JSON input
         - [X] Prototype pollution sinks
         - [X] Prototype pollution gadgets
-            - [ ] Example of a prototype pollution gadget
+            - [X] Example of a prototype pollution gadget
     - [ ] Finding prototype pollution vulnerabilities
         - [ ] Finding prototype pollution sources manually
         - [ ] Finding prototype pollution sources using DOM Invader
