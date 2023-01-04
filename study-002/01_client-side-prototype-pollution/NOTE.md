@@ -1,8 +1,8 @@
 ## === Study Progress ===
 - [X] Client-side prototype pollution
     - [X] [JavaScript prototypes and inheritance](https://portswigger.net/web-security/prototype-pollution/javascript-prototypes-and-inheritance)
-    - [ ] What is prototype pollution?
-    - [ ] Finding client-side prototype pollution vulnerabilities
+    - [X] What is prototype pollution?
+    - [X] Finding client-side prototype pollution vulnerabilities
     - [ ] Prototype pollution via browser APIs
     - [ ] Preventing prototype pollution
     - [ ] JavaScript prototypes and inheritance
@@ -20,8 +20,8 @@
         - [X] Prototype pollution sinks
         - [X] Prototype pollution gadgets
             - [X] Example of a prototype pollution gadget
-    - [ ] Finding prototype pollution vulnerabilities
-        - [ ] Finding prototype pollution sources manually
+    - [X] [Finding prototype pollution vulnerabilities](https://portswigger.net/web-security/prototype-pollution/finding)
+        - [X] Finding prototype pollution sources manually
         - [ ] Finding prototype pollution sources using DOM Invader
         - [ ] Finding prototype pollution gadgets manually
         - [ ] Finding prototype pollution gadgets using DOM Invader
