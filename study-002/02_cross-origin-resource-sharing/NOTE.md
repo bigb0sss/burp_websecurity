@@ -105,3 +105,11 @@ data:text/html, <!DOCTYPE html>
 2. Is Vary: Origin specified?
 3. Is cache poisoning practical?
 
+## Recommendations
+- Do not do dynamic generations of CORS
+- Validate with caution
+    - Is a valid domain name
+    - ends with your .yourdomain.tld
+    - Starts with https://
+- Always specify Vary: Origin
+- Do not trust null
