@@ -1,0 +1,89 @@
+## === Study Progress ===
+- [ ] DOM-based vulnerabilities
+    - [ ] What is the DOM?
+    - [ ] Taint-flow vulnerabilities
+        - [ ] What is taint flow?
+        - [ ] Common sources
+        - [ ] Which sinks can lead to DOM-based vulnerabilities?
+        - [ ] How to prevent DOM-based taint-flow vulnerabilities
+    - [ ] DOM clobbering
+    - [ ] Controlling the web message source
+        - [ ] What is the impact of DOM-based web message vulnerabilities?
+        - [ ] How to construct an attack using web messages as the source
+        - [ ] Origin verification
+        - [ ] Which sinks can lead to DOM-based web message vulnerabilities?
+    - [ ] DOM-based open redirection
+        - [ ] What is DOM-based open redirection?
+        - [ ] What is the impact of DOM-based open redirection?
+        - [ ] Which sinks can lead to DOM-based open-redirection vulnerabilities?
+        - [ ] How to prevent DOM-based open-redirection vulnerabilities
+    - [ ] DOM-based cookie manipulation
+        - [ ] What is DOM-based cookie manipulation?
+        - [ ] What is the impact of a DOM-based cookie-manipulation attack?
+        - [ ] Which sinks can lead to DOM-based cookie-manipulation vulnerabilities?
+        - [ ] How to prevent DOM-based cookie-manipulation vulnerabilities
+    - [ ] DOM-based JavaScript injection
+        - [ ] What is DOM-based JavaScript injection?
+        - [ ] What is the impact of a DOM-based JavaScript-injection attack?
+        - [ ] Which sinks can lead to DOM-based JavaScript-injection vulnerabilities?
+        - [ ] How to prevent DOM-based JavaScript-injection vulnerabilities
+    - [ ] DOM-based document-domain manipulation
+        - [ ] What is DOM-based document-domain manipulation?
+        - [ ] Which sinks can lead to DOM-based document-domain manipulation vulnerabilities?
+        - [ ] How to prevent DOM-based document-domain manipulation vulnerabilities
+    - [ ] DOM-based WebSocket-URL poisoning
+        - [ ] What is DOM-based WebSocket-URL poisoning?
+        - [ ] What is the impact of WebSocket-URL poisoning?
+        - [ ] Which sinks can lead to WebSocket-URL poisoning vulnerabilities?
+        - [ ] How to prevent DOM-based WebSocket-URL poisoning vulnerabilities
+    - [ ] DOM-based link manipulation
+        - [ ] What is DOM-based link manipulation?
+        - [ ] What is the impact of a DOM-based link-manipulation attack?
+        - [ ] Which sinks can lead to DOM-based link-manipulation vulnerabilities?
+        - [ ] How to prevent DOM-based link-manipulation vulnerabilities
+    - [ ] Web message manipulation
+        - [ ] What is DOM-based web message manipulation?
+        - [ ] Which sinks can lead to DOM-based web-message manipulation vulnerabilities?
+        - [ ] How to prevent DOM-based web message manipulation
+    - [ ] DOM-based Ajax request-header manipulation
+        - [ ] What is DOM-based Ajax request-header manipulation?
+        - [ ] What is the impact of DOM-based Ajax request-header manipulation?
+        - [ ] Which sinks can lead to DOM-based Ajax request-header manipulation vulnerabilities?
+        - [ ] How to prevent DOM-based Ajax request-header manipulation
+    - [ ] DOM-based local file-path manipulation
+        - [ ] What is DOM-based local file-path manipulation?
+        - [ ] What is the impact of DOM-based local file-path manipulation?
+        - [ ] Which sinks can lead to DOM-based local file-path manipulation vulnerabilities?
+        - [ ] How to prevent DOM-based local file-path manipulation vulnerabilities
+    - [ ] DOM-based client-side SQL injection
+        - [ ] What is DOM-based client-side SQL injection?
+        - [ ] What is the impact of DOM-based client-side SQL injection?
+        - [ ] Which sinks can lead to DOM-based client-side SQL-injection vulnerabilities?
+        - [ ] How to prevent DOM-based client-side SQL-injection vulnerabilities
+    - [ ] DOM-based HTML5-storage manipulation
+        - [ ] What is DOM-based HTML5-storage manipulation?
+        - [ ] Which sinks can lead to DOM-based HTML5-storage manipulation vulnerabilities?
+        - [ ] How to prevent DOM-based HTML5-storage manipulation vulnerabilities
+    - [ ] DOM-based client-side XPath injection
+        - [ ] What is DOM-based XPath injection?
+        - [ ] What is the impact of DOM-based XPath injection?
+        - [ ] Which sinks can lead to XPath-injection vulnerabilities?
+        - [ ] How to prevent DOM-based XPath-injection vulnerabilities
+    - [ ] DOM-based client-side JSON injection
+        - [ ] What is DOM-based JSON injection?
+        - [ ] What is the impact of a DOM-based JSON-injection attack?
+        - [ ] Which sinks can lead to DOM-based JSON-injection vulnerabilities?
+        - [ ] How to prevent client-side JSON-injection vulnerabilities?
+    - [ ] DOM-data manipulation
+        - [ ] What is DOM-data manipulation?
+        - [ ] What is the impact of DOM-data manipulation?
+        - [ ] Which sinks can lead to DOM-data manipulation vulnerabilities?
+        - [ ] How to prevent DOM-data manipulation vulnerabilities
+    - [ ] DOM-based denial of service
+        - [ ] What is DOM-based denial of service?
+        - [ ] Which sinks can lead to DOM-based denial-of-service vulnerabilities?
+        - [ ] How to prevent DOM-based denial-of-service vulnerabilities
+    - [ ] DOM clobbering
+        - [ ] What is DOM clobbering?
+        - [ ] How to exploit DOM-clobbering vulnerabilities
+        - [ ] How to prevent DOM-clobbering attacks
