@@ -1,5 +1,5 @@
 ## === Study Progress ===
-- [X] JWT attacks
+- JWT attacks
     - [X] What are JWTs?
     	- [X] JWT format
     	- [X] JWT signature
@@ -8,8 +8,8 @@
     - [X] What is the impact of JWT attacks?
     - [X] How do vulnerabilities to JWT attacks arise?
     - [X] How to work with JWTs in Burp Suite
-    - [ ] Exploiting flawed JWT signature verification
-    	- [ ] Accepting arbitrary signatures
+    - [X] Exploiting flawed JWT signature verification
+    	- [X] Accepting arbitrary signatures
     	- [ ] Accepting tokens with no signature
     - [ ] Brute-forcing secret keys
     	- [ ] Brute-forcing secret keys using hashcat
@@ -35,3 +35,7 @@
     	    - [ ] Step 3 - Modify your JWT
     	    - [ ] Step 4 - Sign the JWT using the public key
     	- [ ] Deriving public keys from existing tokens
+
+- JWT LAB
+    - [X] [Lab: JWT authentication bypass via unverified signature](https://portswigger.net/web-security/jwt/lab-jwt-authentication-bypass-via-unverified-signature)
+    - [ ] [Lab: JWT authentication bypass via flawed signature verification](https://portswigger.net/web-security/jwt/lab-jwt-authentication-bypass-via-flawed-signature-verification)
