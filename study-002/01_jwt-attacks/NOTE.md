@@ -1,0 +1,37 @@
+## === Study Progress ===
+- [X] JWT attacks
+    - [X] What are JWTs?
+    	- [X] JWT format
+    	- [X] JWT signature
+    	- [X] JWT vs JWS vs JWE
+    - [X] What are JWT attacks?
+    - [X] What is the impact of JWT attacks?
+    - [X] How do vulnerabilities to JWT attacks arise?
+    - [X] How to work with JWTs in Burp Suite
+    - [ ] Exploiting flawed JWT signature verification
+    	- [ ] Accepting arbitrary signatures
+    	- [ ] Accepting tokens with no signature
+    - [ ] Brute-forcing secret keys
+    	- [ ] Brute-forcing secret keys using hashcat
+    - [ ] JWT header parameter injections
+    	- [ ] Injecting self-signed JWTs via the jwk parameter
+    	- [ ] Injecting self-signed JWTs via the jku parameter
+    	- [ ] Injecting self-signed JWTs via the kid parameter
+    	- [ ] Other interesting JWT header parameters
+    - [ ] JWT algorithm confusion
+    - [ ] How to prevent JWT attacks
+    	- [ ] Additional best practice for JWT handling
+    - [ ] Working with JWTs in Burp Suite
+    	- [ ] Viewing the contents of JWTs
+    	- [ ] Editing the contents of JWTs
+    	- [ ] Adding new signing keys
+    	- [ ] Signing JWTs
+    - [ ] Algorithm confusion attacks
+    	- [ ] Symmetric vs asymmetric algorithms
+    	- [ ] How do algorithm confusion vulnerabilities arise?
+    	- [ ] Performing an algorithm confusion attack
+    	    - [ ] Step 1 - Obtain the server's public key
+    	    - [ ] Step 2 - Convert the public key to a suitable format
+    	    - [ ] Step 3 - Modify your JWT
+    	    - [ ] Step 4 - Sign the JWT using the public key
+    	- [ ] Deriving public keys from existing tokens
