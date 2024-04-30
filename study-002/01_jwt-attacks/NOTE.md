@@ -10,9 +10,9 @@
     - [X] How to work with JWTs in Burp Suite
     - [X] Exploiting flawed JWT signature verification
     	- [X] Accepting arbitrary signatures
-    	- [ ] Accepting tokens with no signature
-    - [ ] Brute-forcing secret keys
-    	- [ ] Brute-forcing secret keys using hashcat
+    	- [X] Accepting tokens with no signature
+    - [X] Brute-forcing secret keys
+    	- [X] Brute-forcing secret keys using hashcat
     - [ ] JWT header parameter injections
     	- [ ] Injecting self-signed JWTs via the jwk parameter
     	- [ ] Injecting self-signed JWTs via the jku parameter
@@ -38,4 +38,5 @@
 
 - JWT LAB
     - [X] [Lab: JWT authentication bypass via unverified signature](https://portswigger.net/web-security/jwt/lab-jwt-authentication-bypass-via-unverified-signature)
-    - [ ] [Lab: JWT authentication bypass via flawed signature verification](https://portswigger.net/web-security/jwt/lab-jwt-authentication-bypass-via-flawed-signature-verification)
+    - [X] [Lab: JWT authentication bypass via flawed signature verification](https://portswigger.net/web-security/jwt/lab-jwt-authentication-bypass-via-flawed-signature-verification)
+    - [X] [Lab: JWT authentication bypass via weak signing key](https://portswigger.net/web-security/jwt/lab-jwt-authentication-bypass-via-weak-signing-key)
