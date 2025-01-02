@@ -22,3 +22,9 @@ https://portswigger.net/web-security/learning-paths/api-testing
 # Mass assignment vulnerability
 ## Lab: Exploiting a mass assignment vulnerability
 - Solution: 03_api-exploiting-mass-assignment.py
+
+# Preventing vulnerabilities in APIs
+
+# Server-side parameter pollution
+## Lab: Exploiting server-side parameter pollution in a query string
+- Solution: 04_api-exploiting-server-side-param-pollution.py
