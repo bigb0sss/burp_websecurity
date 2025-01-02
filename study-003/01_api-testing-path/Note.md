@@ -20,3 +20,5 @@ https://portswigger.net/web-security/learning-paths/api-testing
 # Finding hidden parameters
 
 # Mass assignment vulnerability
+## Lab: Exploiting a mass assignment vulnerability
+- Solution: 03_api-exploiting-mass-assignment.py
